@@ -74,6 +74,12 @@ python3 /home/user/.doubao/agent_mode/workspace/.user_skills/doubao-first-princi
 
 截图自检用 Playwright（`executable_path='/usr/local/bin/chromium'`），桌面 1280×900 与移动 390×844，截图存放在 `_shots/`（过程产物，勿删）。html skill 的 `scripts/shot.py` 在本环境不存在，README 不再引用它。
 
+## 在线版与仓库
+
+- 演示地址：https://zrx-11.github.io/math-analysis/
+- 仓库地址：https://github.com/zrx-11/math-analysis
+- 仓库结构：根目录 `index.html`（即本产物）、`README.md`；构建脚本、字体、PDF 文本抽取放在 `source/`，按 `source/README.md` 的方式可在本地重建
+
 ## 已知边界
 
 - PDF 文本层的数学公式严重失真（缺胳膊少腿），正文的公式与例题全部回原书页面截图核对，未照抄文本层。
