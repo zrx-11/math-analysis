@@ -29,7 +29,7 @@ graph LR
 
 达布和的性质：加细分割时，上和减小、下和增大；上和的下确界记 $\overline I$，下和的上确界记 $\underline I$，恒有 $\underline I\le\overline I$。
 
-可积的充要条件：$\overline I=\underline I$，等价于对任意 $\varepsilon&gt;0$ 存在分割使 $\overline S-\underline S&lt;\varepsilon$。
+可积的充要条件：$\overline I=\underline I$，等价于对任意 $\varepsilon>0$ 存在分割使 $\overline S-\underline S<\varepsilon$。
 
 三类可积函数：
 

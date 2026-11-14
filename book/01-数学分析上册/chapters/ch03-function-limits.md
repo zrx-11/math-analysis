@@ -18,15 +18,15 @@
 
 ### 概念 1：ε-δ 定义（难度：高难）
 
-设 $f$ 在点 $x_0$ 的某个去心邻域内有定义。若对任意 $\varepsilon&gt;0$，存在 $\delta&gt;0$，使得当 $0&lt;|x-x_0|&lt;\delta$ 时都有
+设 $f$ 在点 $x_0$ 的某个去心邻域内有定义。若对任意 $\varepsilon>0$，存在 $\delta>0$，使得当 $0<|x-x_0|<\delta$ 时都有
 
-$$|f(x)-A|&lt;\varepsilon,$$
+$$|f(x)-A|<\varepsilon,$$
 
 则称 $x\to x_0$ 时 $f$ 的极限是 $A$，记 $\lim_{x\to x_0}f(x)=A$。
 
 三个细节必须注意：
 
-- $0&lt;$ 表示 $x\ne x_0$。函数在 $x_0$ 点取什么值、有没有定义，与极限无关。
+- $0<$ 表示 $x\ne x_0$。函数在 $x_0$ 点取什么值、有没有定义，与极限无关。
 - $\delta$ 依赖 $\varepsilon$，通常取 $\min\{1,\ \varepsilon/C\}$ 这种形式，先限制在一个小区间里把高阶项压住。
 - 结论只要求"$x_0$ 附近"，不要求全局。
 
@@ -36,9 +36,9 @@ $$|f(x)-A|&lt;\varepsilon,$$
 
 ### 概念 2：x 趋于无穷与单侧极限（难度：基础）
 
-$x\to\infty$ 的定义换成"任给 $\varepsilon&gt;0$，存在 $X&gt;0$，当 $|x|&gt;X$ 时 $|f(x)-A|&lt;\varepsilon$"。把 $\delta$ 换成 $X$，其余结构不动。
+$x\to\infty$ 的定义换成"任给 $\varepsilon>0$，存在 $X>0$，当 $|x|>X$ 时 $|f(x)-A|<\varepsilon$"。把 $\delta$ 换成 $X$，其余结构不动。
 
-单侧极限：$x\to x_0^+$ 要求 $x_0&lt;x&lt;x_0+\delta$，$x\to x_0^-$ 要求 $x_0-\delta&lt;x&lt;x_0$。
+单侧极限：$x\to x_0^+$ 要求 $x_0<x<x_0+\delta$，$x\to x_0^-$ 要求 $x_0-\delta<x<x_0$。
 
 一条实用结论：$\lim_{x\to x_0}f(x)=A$ 当且仅当左右极限都存在且都等于 $A$。判断分段函数在分界点的极限，就查这一条。
 
@@ -60,7 +60,7 @@ $\lim_{x\to x_0}f(x)=A$ 的充要条件是：对任意满足 $x_n\to x_0$、$x_n
 
 $$\lim_{x\to0}\frac{\sin x}{x}=1,\qquad \lim_{x\to0}(1+x)^{1/x}=e.$$
 
-第一条的证明用单位圆面积夹逼：$0&lt;|x|&lt;\pi/2$ 时 $\sin x&lt;x&lt;\tan x$，同除 $\sin x$ 得 $1&lt;\frac{x}{\sin x}&lt;\frac{1}{\cos x}$，两端趋于 1。
+第一条的证明用单位圆面积夹逼：$0<|x|<\pi/2$ 时 $\sin x<x<\tan x$，同除 $\sin x$ 得 $1<\frac{x}{\sin x}<\frac{1}{\cos x}$，两端趋于 1。
 
 第二条把数列版 $\left(1+\frac1n\right)^n\to e$ 推广到实数，用海涅定理与夹逼完成。
 

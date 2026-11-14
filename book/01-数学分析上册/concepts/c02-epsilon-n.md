@@ -24,20 +24,20 @@ graph LR
 
 ## 详解
 
-定义：对任意 $\varepsilon&gt;0$，存在正整数 $N$，当 $n&gt;N$ 时 $|a_n-a|&lt;\varepsilon$。
+定义：对任意 $\varepsilon>0$，存在正整数 $N$，当 $n>N$ 时 $|a_n-a|<\varepsilon$。
 
-量词顺序是定义的骨架：$\forall\varepsilon\ \exists N\ \forall n&gt;N$。把 $\exists$ 和 $\forall$ 调换，意思就变了。
+量词顺序是定义的骨架：$\forall\varepsilon\ \exists N\ \forall n>N$。把 $\exists$ 和 $\forall$ 调换，意思就变了。
 
 例：证明 $\lim\frac{2n+1}{n+3}=2$。
 
 第一步算距离：
 $$\left|\frac{2n+1}{n+3}-2\right|=\left|\frac{2n+1-2n-6}{n+3}\right|=\frac{5}{n+3}.$$
 
-第二步解不等式：$\frac{5}{n+3}&lt;\varepsilon\iff n&gt;\frac{5}{\varepsilon}-3$。
+第二步解不等式：$\frac{5}{n+3}<\varepsilon\iff n>\frac{5}{\varepsilon}-3$。
 
 第三步取 $N=\max\left(1,\left\lfloor\frac5\varepsilon-3\right\rfloor+1\right)$。
 
-第四步收尾：当 $n&gt;N$ 时，$\frac{5}{n+3}&lt;\varepsilon$，即 $|a_n-2|&lt;\varepsilon$。证毕。
+第四步收尾：当 $n>N$ 时，$\frac{5}{n+3}<\varepsilon$，即 $|a_n-2|<\varepsilon$。证毕。
 
 整个证明不需要"n 很大时 5/(n+3) 很小"这种直觉描述，只需要三步代数。
 
@@ -45,7 +45,7 @@ $$\left|\frac{2n+1}{n+3}-2\right|=\left|\frac{2n+1-2n-6}{n+3}\right|=\frac{5}{n+
 
 - 把 $N$ 写成依赖 $n$ 的量。$N$ 只能依赖 $\varepsilon$。
 - 要求 $N$ 是"最小的"。定义只要求存在，取大一点完全合法。
-- 把 $|a_n-a|&lt;\varepsilon$ 写成 $\le\varepsilon$。两者在极限定义里等价（可以取 $\varepsilon/2$），但初学时按定义写 `<` 更规范。
+- 把 $|a_n-a|<\varepsilon$ 写成 $\le\varepsilon$。两者在极限定义里等价（可以取 $\varepsilon/2$），但初学时按定义写 `<` 更规范。
 
 ## 在书中出现的脉络
 

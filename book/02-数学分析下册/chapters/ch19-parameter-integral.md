@@ -35,7 +35,7 @@ $$\frac{d}{dy}\int_{a(y)}^{b(y)}f(x,y)dx=f(b(y),y)b'(y)-f(a(y),y)a'(y)+\int_{a(y
 
 $$I(y)=\int_a^{+\infty}f(x,y)dx,\quad y\in[c,d].$$
 
-若对任意 $\varepsilon&gt;0$，存在 $M&gt;0$（只依赖 $\varepsilon$），使 $A&gt;M$ 时对一切 $y\in[c,d]$ 都有 $\left|\int_A^\infty f(x,y)dx\right|&lt;\varepsilon$，称积分关于 $y$ 一致收敛。
+若对任意 $\varepsilon>0$，存在 $M>0$（只依赖 $\varepsilon$），使 $A>M$ 时对一切 $y\in[c,d]$ 都有 $\left|\int_A^\infty f(x,y)dx\right|<\varepsilon$，称积分关于 $y$ 一致收敛。
 
 **M 判别法**：$|f(x,y)|\le M(x)$，$\int_a^\infty M(x)dx$ 收敛，则一致收敛。
 
@@ -47,19 +47,19 @@ $$I(y)=\int_a^{+\infty}f(x,y)dx,\quad y\in[c,d].$$
 - 可积：$\int_c^dI(y)dy=\int_a^\infty\left(\int_c^df(x,y)dy\right)dx$。
 - 可导：$I'(y)=\int_a^\infty f_y(x,y)dx$，要求 $f_y$ 的积分一致收敛。
 
-典型例子：$\int_0^\infty e^{-xy}dx=\frac1y$（$y&gt;0$）。它对 $y$ 在 $[\delta,\infty)$ 上一致收敛，所以可以求导得 $\int_0^\infty xe^{-xy}dx=\frac{1}{y^2}$。
+典型例子：$\int_0^\infty e^{-xy}dx=\frac1y$（$y>0$）。它对 $y$ 在 $[\delta,\infty)$ 上一致收敛，所以可以求导得 $\int_0^\infty xe^{-xy}dx=\frac{1}{y^2}$。
 
 ### 概念 3：欧拉积分（难度：进阶）
 
 **Γ 函数**：
 
-$$\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}dx,\quad s&gt;0.$$
+$$\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}dx,\quad s>0.$$
 
-性质：$\Gamma(s+1)=s\Gamma(s)$（分部积分得），$\Gamma(n+1)=n!$，$\Gamma\left(\frac12\right)=\sqrt\pi$。它在 $s&gt;0$ 上连续可导。
+性质：$\Gamma(s+1)=s\Gamma(s)$（分部积分得），$\Gamma(n+1)=n!$，$\Gamma\left(\frac12\right)=\sqrt\pi$。它在 $s>0$ 上连续可导。
 
 **B 函数**：
 
-$$B(p,q)=\int_0^1x^{p-1}(1-x)^{q-1}dx,\quad p,q&gt;0.$$
+$$B(p,q)=\int_0^1x^{p-1}(1-x)^{q-1}dx,\quad p,q>0.$$
 
 性质：$B(p,q)=B(q,p)$，$B(p,q)=\frac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)}$。
 
@@ -87,7 +87,7 @@ graph TD
 ## 类比与实例
 
 - 类比：含参量积分像一个可调焦距的镜头，参数是焦距。一致收敛意味着"无论焦距怎么调，远处的模糊程度都能统一控制"。失效边界：只在参数区间上统一，换区间可能要重判。
-- 实例：$\int_0^\infty\frac{\sin xy}{x}dx=\frac\pi2$（$y&gt;0$）。对 $y$ 求导得 $\int_0^\infty\cos(xy)dx$，这个积分发散，说明原积分关于 $y$ 在 $(0,\infty)$ 上不一致收敛，不能在 0 附近求导。
+- 实例：$\int_0^\infty\frac{\sin xy}{x}dx=\frac\pi2$（$y>0$）。对 $y$ 求导得 $\int_0^\infty\cos(xy)dx$，这个积分发散，说明原积分关于 $y$ 在 $(0,\infty)$ 上不一致收敛，不能在 0 附近求导。
 
 ## 常见误解
 

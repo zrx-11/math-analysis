@@ -90,7 +90,7 @@ graph TD
 ## 类比与实例
 
 - 类比：傅里叶级数像把一段音乐拆成不同音高的音量。每个 $a_n$、$b_n$ 是某个频率的音量旋钮，把它们调回去就还原原声。失效边界：只对"不太野"的函数成立，无限尖峰的函数拆不干净。
-- 实例：方波 $f(x)=1$（$0&lt;x&lt;\pi$）、$-1$（$-\pi&lt;x&lt;0$）。奇函数，$a_n=0$，$b_n=\frac{2}{n\pi}(1-\cos n\pi)$，偶数项为 0，奇数项为 $\frac{4}{n\pi}$。级数为 $\frac4\pi\left(\sin x+\frac{\sin3x}{3}+\cdots\right)$。
+- 实例：方波 $f(x)=1$（$0<x<\pi$）、$-1$（$-\pi<x<0$）。奇函数，$a_n=0$，$b_n=\frac{2}{n\pi}(1-\cos n\pi)$，偶数项为 0，奇数项为 $\frac{4}{n\pi}$。级数为 $\frac4\pi\left(\sin x+\frac{\sin3x}{3}+\cdots\right)$。
 
 ## 常见误解
 

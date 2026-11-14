@@ -32,7 +32,7 @@ graph TD
 
 用法示例：证明 $|\sin x-\sin y|\le|x-y|$。对 $\sin$ 在 $x,y$ 之间用拉格朗日，$|\sin x-\sin y|=|\cos\xi||x-y|\le|x-y|$。
 
-再如证明 $x&gt;0$ 时 $e^x&gt;1+x$：对 $e^t$ 在 $[0,x]$ 用拉格朗日，$e^x-1=e^\xi x&gt;x$，因为 $\xi&gt;0$ 时 $e^\xi&gt;1$。
+再如证明 $x>0$ 时 $e^x>1+x$：对 $e^t$ 在 $[0,x]$ 用拉格朗日，$e^x-1=e^\xi x>x$，因为 $\xi>0$ 时 $e^\xi>1$。
 
 ## 常见误解
 

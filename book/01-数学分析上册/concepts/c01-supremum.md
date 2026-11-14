@@ -28,13 +28,13 @@ graph LR
 设 $E$ 非空。$\eta=\sup E$ 的完整判定是两条：
 
 1. 对一切 $x\in E$，$x\le\eta$（是上界）。
-2. 对任意 $\varepsilon&gt;0$，存在 $x_0\in E$，使 $x_0&gt;\eta-\varepsilon$（最小）。
+2. 对任意 $\varepsilon>0$，存在 $x_0\in E$，使 $x_0>\eta-\varepsilon$（最小）。
 
-第二条等价于"任何比 $\eta$ 小的数都不是上界"。做题时经常只用第二条来找矛盾：假设某个 $\eta'&lt;\eta$ 也是上界，由第二条取 $\varepsilon=\eta-\eta'$，立刻有元素超过 $\eta'$，与上界定义冲突。
+第二条等价于"任何比 $\eta$ 小的数都不是上界"。做题时经常只用第二条来找矛盾：假设某个 $\eta'<\eta$ 也是上界，由第二条取 $\varepsilon=\eta-\eta'$，立刻有元素超过 $\eta'$，与上界定义冲突。
 
-例子：$E=\{1-\frac1n\}$。$\sup E=1$。验证第二条：给定 $\varepsilon$，要 $1-\frac1n&gt;1-\varepsilon$，即 $n&gt;1/\varepsilon$，取 $n=\lfloor 1/\varepsilon\rfloor+1$ 即可。这个验证过程就是"上确界"这个词的全部内容。
+例子：$E=\{1-\frac1n\}$。$\sup E=1$。验证第二条：给定 $\varepsilon$，要 $1-\frac1n>1-\varepsilon$，即 $n>1/\varepsilon$，取 $n=\lfloor 1/\varepsilon\rfloor+1$ 即可。这个验证过程就是"上确界"这个词的全部内容。
 
-反例：把 $E$ 换成 $\{x\in\mathbb{Q}:x^2&lt;2\}$。它在 $\mathbb{Q}$ 中有上界（2 就是），但没有最小上界。假设有最小上界 $q\in\mathbb{Q}$，则 $q^2=2$ 或 $q^2&gt;2$ 或 $q^2&lt;2$。$q^2=2$ 不可能（$\sqrt2$ 无理）；$q^2&gt;2$ 时可以构造更小的有理上界；$q^2&lt;2$ 时 $q$ 根本不是上界。三条都堵死，说明最小上界不存在。
+反例：把 $E$ 换成 $\{x\in\mathbb{Q}:x^2<2\}$。它在 $\mathbb{Q}$ 中有上界（2 就是），但没有最小上界。假设有最小上界 $q\in\mathbb{Q}$，则 $q^2=2$ 或 $q^2>2$ 或 $q^2<2$。$q^2=2$ 不可能（$\sqrt2$ 无理）；$q^2>2$ 时可以构造更小的有理上界；$q^2<2$ 时 $q$ 根本不是上界。三条都堵死，说明最小上界不存在。
 
 ## 常见误解
 

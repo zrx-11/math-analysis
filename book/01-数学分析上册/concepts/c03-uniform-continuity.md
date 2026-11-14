@@ -23,11 +23,11 @@ graph LR
 
 ## 详解
 
-定义：对任意 $\varepsilon&gt;0$，存在 $\delta&gt;0$，使区间内任意 $x_1,x_2$ 满足 $|x_1-x_2|&lt;\delta$ 时，都有 $|f(x_1)-f(x_2)|&lt;\varepsilon$。
+定义：对任意 $\varepsilon>0$，存在 $\delta>0$，使区间内任意 $x_1,x_2$ 满足 $|x_1-x_2|<\delta$ 时，都有 $|f(x_1)-f(x_2)|<\varepsilon$。
 
 与普通连续的区别在 $\delta$ 的位置：连续写作 $\forall x_0\forall\varepsilon\exists\delta$，$\delta$ 可以依赖 $x_0$；一致连续写作 $\forall\varepsilon\exists\delta\forall x_1,x_2$，$\delta$ 必须在 $x_0$ 之前定好。
 
-否定式：存在 $\varepsilon_0&gt;0$，对任意 $\delta&gt;0$，都能找到 $x_1,x_2$ 满足 $|x_1-x_2|&lt;\delta$ 但 $|f(x_1)-f(x_2)|\ge\varepsilon_0$。实用写法是构造两列 $x_n,y_n$，差值趋于 0，函数值差却不趋于 0。
+否定式：存在 $\varepsilon_0>0$，对任意 $\delta>0$，都能找到 $x_1,x_2$ 满足 $|x_1-x_2|<\delta$ 但 $|f(x_1)-f(x_2)|\ge\varepsilon_0$。实用写法是构造两列 $x_n,y_n$，差值趋于 0，函数值差却不趋于 0。
 
 例：$f(x)=x^2$ 在 $[0,1]$ 上一致连续（闭区间连续），在 $\mathbb{R}$ 上不一致连续：取 $x_n=n$、$y_n=n+\frac1n$，差值 $\frac1n\to0$，函数值差 $=2+\frac{1}{n^2}\to2$。
 

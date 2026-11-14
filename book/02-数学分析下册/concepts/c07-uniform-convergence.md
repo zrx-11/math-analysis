@@ -25,7 +25,7 @@ graph LR
 
 ## 详解
 
-定义：对任意 $\varepsilon&gt;0$，存在 $N$，使 $n&gt;N$ 时对一切 $x\in D$ 都有 $|S_n(x)-S(x)|&lt;\varepsilon$。
+定义：对任意 $\varepsilon>0$，存在 $N$，使 $n>N$ 时对一切 $x\in D$ 都有 $|S_n(x)-S(x)|<\varepsilon$。
 
 等价判据：$\sup_{x\in D}|S_n(x)-S(x)|\to0$。
 
