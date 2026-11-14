@@ -1,0 +1,1004 @@
+{
+  "slug": "math-analysis-upper",
+  "title": "数学分析（上册）",
+  "subtitle": "从实数到反常积分：一元分析的主线",
+  "book": {
+    "title": "数学分析 第五版（上册）",
+    "author": "华东师范大学数学科学学院 编",
+    "source": [
+      "数分上.pdf"
+    ]
+  },
+  "audience": "零基础到本科一年级",
+  "goal": "走通上册 11 章主线：实数完备性 → 极限 → 连续 → 微分 → 中值定理 → 积分 → 反常积分，每章都能复述定义、说清定理条件、完成标准计算。",
+  "learningPath": [
+    {
+      "step": "01",
+      "title": "实数与数列极限",
+      "chapterIds": [
+        "ch01",
+        "ch02"
+      ],
+      "checkpoint": "能验证上确界、能用 ε-N 写证明"
+    },
+    {
+      "step": "02",
+      "title": "函数极限与连续",
+      "chapterIds": [
+        "ch03",
+        "ch04"
+      ],
+      "checkpoint": "能用 ε-δ、能判断间断点、说清闭区间四定理"
+    },
+    {
+      "step": "03",
+      "title": "导数与中值定理",
+      "chapterIds": [
+        "ch05",
+        "ch06"
+      ],
+      "checkpoint": "能算各类导数，能用中值定理证不等式"
+    },
+    {
+      "step": "04",
+      "title": "完备性与积分",
+      "chapterIds": [
+        "ch07",
+        "ch08",
+        "ch09"
+      ],
+      "checkpoint": "能说清六定理等价，能算不定积分与定积分"
+    },
+    {
+      "step": "05",
+      "title": "积分应用与反常积分",
+      "chapterIds": [
+        "ch10",
+        "ch11"
+      ],
+      "checkpoint": "能算面积体积弧长，能判反常积分敛散"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "第 1 章：实数集与函数",
+      "file": "chapters/ch01-real-numbers.md",
+      "difficulty": 1,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 1
+      },
+      "prerequisites": []
+    },
+    {
+      "id": "ch02",
+      "title": "第 2 章：数列极限",
+      "file": "chapters/ch02-sequences.md",
+      "difficulty": 2,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 21
+      },
+      "prerequisites": [
+        "ch01"
+      ]
+    },
+    {
+      "id": "ch03",
+      "title": "第 3 章：函数极限",
+      "file": "chapters/ch03-function-limits.md",
+      "difficulty": 2,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 41
+      },
+      "prerequisites": [
+        "ch02"
+      ]
+    },
+    {
+      "id": "ch04",
+      "title": "第 4 章：函数的连续性",
+      "file": "chapters/ch04-continuity.md",
+      "difficulty": 2,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 65
+      },
+      "prerequisites": [
+        "ch03"
+      ]
+    },
+    {
+      "id": "ch05",
+      "title": "第 5 章：导数和微分",
+      "file": "chapters/ch05-derivative.md",
+      "difficulty": 2,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 83
+      },
+      "prerequisites": [
+        "ch04"
+      ]
+    },
+    {
+      "id": "ch06",
+      "title": "第 6 章：微分中值定理及其应用",
+      "file": "chapters/ch06-mean-value.md",
+      "difficulty": 3,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 111
+      },
+      "prerequisites": [
+        "ch05"
+      ]
+    },
+    {
+      "id": "ch07",
+      "title": "第 7 章：实数的完备性",
+      "file": "chapters/ch07-completeness.md",
+      "difficulty": 3,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 139
+      },
+      "prerequisites": [
+        "ch01",
+        "ch02",
+        "ch04"
+      ]
+    },
+    {
+      "id": "ch08",
+      "title": "第 8 章：不定积分",
+      "file": "chapters/ch08-indefinite-integral.md",
+      "difficulty": 2,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 167
+      },
+      "prerequisites": [
+        "ch05",
+        "ch06"
+      ]
+    },
+    {
+      "id": "ch09",
+      "title": "第 9 章：定积分",
+      "file": "chapters/ch09-definite-integral.md",
+      "difficulty": 3,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 191
+      },
+      "prerequisites": [
+        "ch07",
+        "ch08"
+      ]
+    },
+    {
+      "id": "ch10",
+      "title": "第 10 章：定积分的应用",
+      "file": "chapters/ch10-integral-applications.md",
+      "difficulty": 2,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 219
+      },
+      "prerequisites": [
+        "ch09"
+      ]
+    },
+    {
+      "id": "ch11",
+      "title": "第 11 章：反常积分",
+      "file": "chapters/ch11-improper-integral.md",
+      "difficulty": 3,
+      "source": {
+        "file": "数分上.pdf",
+        "page": 245
+      },
+      "prerequisites": [
+        "ch09"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "c01",
+      "title": "上确界",
+      "file": "concepts/c01-supremum.md",
+      "chapterIds": [
+        "ch01"
+      ],
+      "difficulty": "高难",
+      "source": {
+        "file": "数分上.pdf",
+        "page": 5
+      },
+      "prerequisites": [],
+      "depthFragment": "concepts/c01-depth.md"
+    },
+    {
+      "id": "c02",
+      "title": "数列极限的 ε-N 定义",
+      "file": "concepts/c02-epsilon-n.md",
+      "chapterIds": [
+        "ch02"
+      ],
+      "difficulty": "高难",
+      "source": {
+        "file": "数分上.pdf",
+        "page": 21
+      },
+      "prerequisites": [
+        "c01"
+      ]
+    },
+    {
+      "id": "c03",
+      "title": "一致连续",
+      "file": "concepts/c03-uniform-continuity.md",
+      "chapterIds": [
+        "ch04"
+      ],
+      "difficulty": "高难",
+      "source": {
+        "file": "数分上.pdf",
+        "page": 74
+      },
+      "prerequisites": [
+        "c02"
+      ]
+    },
+    {
+      "id": "c04",
+      "title": "微分中值定理",
+      "file": "concepts/c04-mvt.md",
+      "chapterIds": [
+        "ch06"
+      ],
+      "difficulty": "高难",
+      "source": {
+        "file": "数分上.pdf",
+        "page": 113
+      },
+      "prerequisites": [
+        "c03"
+      ]
+    },
+    {
+      "id": "c05",
+      "title": "可积性与达布和",
+      "file": "concepts/c05-integrability.md",
+      "chapterIds": [
+        "ch09"
+      ],
+      "difficulty": "高难",
+      "source": {
+        "file": "数分上.pdf",
+        "page": 195
+      },
+      "prerequisites": [
+        "c01",
+        "c03"
+      ]
+    },
+    {
+      "id": "c06",
+      "title": "绝对收敛与条件收敛",
+      "file": "concepts/c06-absolute-convergence.md",
+      "chapterIds": [
+        "ch11"
+      ],
+      "difficulty": "进阶",
+      "source": {
+        "file": "数分上.pdf",
+        "page": 249
+      },
+      "prerequisites": [
+        "c05"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "上确界",
+      "def": "全体上界里最小的那个数",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "确界原理",
+      "def": "非空有上界的实数集必有上确界",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "去心邻域",
+      "def": "挖掉中心点的邻域，用于定义极限",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "ε-N 定义",
+      "def": "任给 ε>0，存在 N，n>N 时数列项与极限差小于 ε",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "柯西列",
+      "def": "任给 ε>0，存在 N，m,n>N 时两项之差小于 ε",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "单调有界准则",
+      "def": "单调有界数列必收敛",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "海涅定理",
+      "def": "函数极限存在的充要条件是所有数列趋近方式给出同一极限",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "无穷小",
+      "def": "极限为 0 的变量",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "等价无穷小",
+      "def": "比值极限为 1 的两个无穷小",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "可去间断点",
+      "def": "左右极限相等但不等于函数值的间断点",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "跳跃间断点",
+      "def": "左右极限都存在但不相等",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "一致连续",
+      "def": "整个区间共用一个 δ 的连续性",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "导数",
+      "def": "差商的极限，几何上是切线斜率",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "微分",
+      "def": "函数增量的线性主部，dy=f'(x)dx",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "罗尔定理",
+      "def": "端点相等且连续可导，则区间内导数为零",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "拉格朗日中值定理",
+      "def": "平均变化率等于某点瞬时变化率",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "洛必达法则",
+      "def": "0/0 或 ∞/∞ 型极限用导数比计算",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "区间套定理",
+      "def": "长度趋于 0 的嵌套闭区间有唯一公共点",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "聚点",
+      "def": "任意邻域含集合中无穷多个点",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "上极限",
+      "def": "所有收敛子列极限的最大者",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "原函数",
+      "def": "导数为给定函数的函数",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "换元积分法",
+      "def": "通过变量替换把积分化成基本公式",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "分部积分法",
+      "def": "由乘积求导公式移项得到的积分法",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "达布和",
+      "def": "小区间上取上确界或下确界构成的和",
+      "chapterId": "ch09"
+    },
+    {
+      "term": "牛顿-莱布尼茨公式",
+      "def": "定积分等于原函数在两端点的差",
+      "chapterId": "ch09"
+    },
+    {
+      "term": "积分中值定理",
+      "def": "连续函数在区间上存在一点使积分为函数值乘区间长",
+      "chapterId": "ch09"
+    },
+    {
+      "term": "微元法",
+      "def": "把目标量切成小片写出近似再积分",
+      "chapterId": "ch10"
+    },
+    {
+      "term": "曲率",
+      "def": "单位弧长上切线转过的角度",
+      "chapterId": "ch10"
+    },
+    {
+      "term": "无穷积分",
+      "def": "积分区间无限的定积分，由极限定义",
+      "chapterId": "ch11"
+    },
+    {
+      "term": "瑕积分",
+      "def": "被积函数在瑕点无界的积分",
+      "chapterId": "ch11"
+    },
+    {
+      "term": "条件收敛",
+      "def": "本身收敛但绝对值积分发散",
+      "chapterId": "ch11"
+    }
+  ],
+  "cheatsheet": {
+    "file": "cheatsheet.md"
+  },
+  "patterns": {
+    "file": "patterns.md"
+  },
+  "quizzes": [
+    {
+      "id": "q01",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "E={1-1/n: n=1,2,...} 的上确界是？",
+      "options": [
+        "0",
+        "1",
+        "不存在",
+        "2"
+      ],
+      "answer": 1,
+      "explain": "所有项小于 1，且可任意接近 1，1 是最小上界，但不属于 E。",
+      "relatedConceptId": "c01"
+    },
+    {
+      "id": "q02",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "{x∈Q: x²<2} 在有理数范围内有上确界吗？",
+      "options": [
+        "有，是 2",
+        "有，是 √2",
+        "没有",
+        "无法判断"
+      ],
+      "answer": 2,
+      "explain": "√2 不是有理数，最小有理上界不存在，说明有理数集不满足确界原理。",
+      "relatedConceptId": "c01"
+    },
+    {
+      "id": "q03",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "收敛数列一定满足？",
+      "options": [
+        "单调",
+        "有界",
+        "从某项起等于极限",
+        "有上界无下界"
+      ],
+      "answer": 1,
+      "explain": "收敛必有界；单调与恒等都不是必要条件。",
+      "relatedConceptId": "c02"
+    },
+    {
+      "id": "q04",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "a_n=(-1)^n 是柯西列吗？",
+      "options": [
+        "是，因为有界",
+        "是，因为没有极限",
+        "不是，取 ε=1 可找到相距 2 的两项",
+        "无法判断"
+      ],
+      "answer": 2,
+      "explain": "相邻异号项之差为 2，任意 N 之后都能找到，违反柯西条件。",
+      "relatedConceptId": "c02"
+    },
+    {
+      "id": "q05",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "lim(x→0) sin3x/x 等于？",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "不存在"
+      ],
+      "answer": 2,
+      "explain": "sin3x/x = 3·sin3x/(3x) → 3。",
+      "relatedConceptId": "c02"
+    },
+    {
+      "id": "q06",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "lim(x→0) sin(1/x) 存在吗？",
+      "options": [
+        "存在，等于 0",
+        "存在，等于 1",
+        "不存在，可取两列趋近方式得到不同值",
+        "只在右侧存在"
+      ],
+      "answer": 2,
+      "explain": "取 1/(2nπ) 得 0，取 1/(2nπ+π/2) 得 1，由海涅定理知极限不存在。",
+      "relatedConceptId": "c02"
+    },
+    {
+      "id": "q07",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "(x²-1)/(x-1) 在 x=1 处属于？",
+      "options": [
+        "连续",
+        "可去间断",
+        "跳跃间断",
+        "无穷间断"
+      ],
+      "answer": 1,
+      "explain": "化简为 x+1，极限为 2，但函数在 1 处无定义，补定义即可连续。",
+      "relatedConceptId": "c03"
+    },
+    {
+      "id": "q08",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "1/x 在 (0,1) 上不一致连续，理由是？",
+      "options": [
+        "它不连续",
+        "它无界且靠近 0 处变化率无统一控制",
+        "它没有反函数",
+        "它在 1 处间断"
+      ],
+      "answer": 1,
+      "explain": "取 x_n=1/n、y_n=1/(n+1)，差值趋于 0 但函数值差恒为 1。",
+      "relatedConceptId": "c03"
+    },
+    {
+      "id": "q09",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "|x| 在 x=0 处？",
+      "options": [
+        "可导且导数为 0",
+        "连续但不可导",
+        "不连续",
+        "可导且导数为 1"
+      ],
+      "answer": 1,
+      "explain": "左右导数分别为 -1 与 1，不相等。",
+      "relatedConceptId": "c04"
+    },
+    {
+      "id": "q10",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "y=ln sin x 的导数是？",
+      "options": [
+        "cot x",
+        "tan x",
+        "cos x",
+        "1/sin x"
+      ],
+      "answer": 0,
+      "explain": "复合求导 (1/sin x)·cos x = cot x。",
+      "relatedConceptId": "c04"
+    },
+    {
+      "id": "q11",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "x³ 在 [-1,1] 上拉格朗日定理的中值 ξ 是？",
+      "options": [
+        "0",
+        "1/√3",
+        "1/2",
+        "不存在"
+      ],
+      "answer": 1,
+      "explain": "3ξ²·2=2，ξ²=1/3，取正根。",
+      "relatedConceptId": "c04"
+    },
+    {
+      "id": "q12",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "lim(x→0)(e^x-1-x)/x² 等于？",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "不存在"
+      ],
+      "answer": 1,
+      "explain": "泰勒展开 e^x=1+x+x²/2+o(x²)，比值趋于 1/2。",
+      "relatedConceptId": "c04"
+    },
+    {
+      "id": "q13",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "下列哪条不属于实数完备性定理？",
+      "options": [
+        "确界原理",
+        "致密性定理",
+        "洛必达法则",
+        "柯西准则"
+      ],
+      "answer": 2,
+      "explain": "洛必达是求极限的工具，不是完备性定理。",
+      "relatedConceptId": "c01"
+    },
+    {
+      "id": "q14",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "a_n=(-1)^n(1+1/n) 的上极限是？",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "不存在"
+      ],
+      "answer": 2,
+      "explain": "偶数项趋于 1，奇数项趋于 -1，上极限取最大者 1。",
+      "relatedConceptId": "c01"
+    },
+    {
+      "id": "q15",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "∫dx/(x ln x) 等于？",
+      "options": [
+        "ln|x|+C",
+        "ln|ln x|+C",
+        "1/ln x+C",
+        "x ln x+C"
+      ],
+      "answer": 1,
+      "explain": "令 u=ln x，du=dx/x，积分为 ln|u|+C。",
+      "relatedConceptId": "c05"
+    },
+    {
+      "id": "q16",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "∫x cos x dx 等于？",
+      "options": [
+        "x sin x+cos x+C",
+        "x cos x+sin x+C",
+        "sin x+C",
+        "x sin x-cos x+C"
+      ],
+      "answer": 0,
+      "explain": "分部积分 u=x，dv=cos x dx，得 x sin x+cos x+C。",
+      "relatedConceptId": "c05"
+    },
+    {
+      "id": "q17",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "下列在 [0,1] 上不可积的是？",
+      "options": [
+        "x²",
+        "sin x",
+        "狄利克雷函数",
+        "常函数 1"
+      ],
+      "answer": 2,
+      "explain": "狄利克雷函数任意分割的上和与下和差恒为 1。",
+      "relatedConceptId": "c05"
+    },
+    {
+      "id": "q18",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "d/dx ∫₀^{x²} sin t dt 等于？",
+      "options": [
+        "sin x²",
+        "2x sin x²",
+        "sin 2x",
+        "x² sin x²"
+      ],
+      "answer": 1,
+      "explain": "变上限复合求导 f(φ(x))φ'(x)=sin(x²)·2x。",
+      "relatedConceptId": "c05"
+    },
+    {
+      "id": "q19",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "y=x² 在 [0,2] 上绕 x 轴旋转的体积是？",
+      "options": [
+        "32π/5",
+        "8π/3",
+        "16π/5",
+        "4π"
+      ],
+      "answer": 0,
+      "explain": "π∫₀²x⁴dx=32π/5。",
+      "relatedConceptId": "c05"
+    },
+    {
+      "id": "q20",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "半径为 R 的圆，曲率为？",
+      "options": [
+        "R",
+        "1/R",
+        "2/R",
+        "0"
+      ],
+      "answer": 1,
+      "explain": "切线转角与弧长之比恒为 1/R。",
+      "relatedConceptId": "c05"
+    },
+    {
+      "id": "q21",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "∫₁^∞ dx/x^{3/2} 的敛散性是？",
+      "options": [
+        "收敛",
+        "发散",
+        "条件收敛",
+        "无法判断"
+      ],
+      "answer": 0,
+      "explain": "p=3/2>1，收敛。",
+      "relatedConceptId": "c06"
+    },
+    {
+      "id": "q22",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "∫₁^∞ sin x/x dx 属于？",
+      "options": [
+        "绝对收敛",
+        "条件收敛",
+        "发散",
+        "无法判断"
+      ],
+      "answer": 1,
+      "explain": "本身由狄利克雷判别法收敛，绝对值发散，故条件收敛。",
+      "relatedConceptId": "c06"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f01",
+      "chapterId": "ch01",
+      "front": "上确界的两条判据",
+      "back": "是上界；且对任意 ε>0 存在 x0∈E 使 x0>η-ε。",
+      "tags": [
+        "确界"
+      ]
+    },
+    {
+      "id": "f02",
+      "chapterId": "ch01",
+      "front": "为什么有理数集不满足确界原理",
+      "back": "{x∈Q: x²<2} 有上界但没有最小有理上界，缺口在 √2。",
+      "tags": [
+        "完备性"
+      ]
+    },
+    {
+      "id": "f03",
+      "chapterId": "ch02",
+      "front": "ε-N 定义",
+      "back": "任给 ε>0，存在 N，n>N 时 |a_n-a|<ε。",
+      "tags": [
+        "极限"
+      ]
+    },
+    {
+      "id": "f04",
+      "chapterId": "ch02",
+      "front": "柯西准则",
+      "back": "收敛的充要条件：任给 ε>0，存在 N，m,n>N 时 |a_n-a_m|<ε。",
+      "tags": [
+        "极限",
+        "完备性"
+      ]
+    },
+    {
+      "id": "f05",
+      "chapterId": "ch03",
+      "front": "海涅定理",
+      "back": "函数极限存在等价于任意趋近数列给出的函数值数列同极限。",
+      "tags": [
+        "极限"
+      ]
+    },
+    {
+      "id": "f06",
+      "chapterId": "ch03",
+      "front": "两个重要极限",
+      "back": "lim sin x/x=1；lim(1+x)^{1/x}=e。",
+      "tags": [
+        "极限"
+      ]
+    },
+    {
+      "id": "f07",
+      "chapterId": "ch04",
+      "front": "间断点四类",
+      "back": "可去、跳跃（第一类）；无穷、振荡（第二类）。",
+      "tags": [
+        "连续"
+      ]
+    },
+    {
+      "id": "f08",
+      "chapterId": "ch04",
+      "front": "闭区间连续四定理",
+      "back": "有界、取到最值、介值、一致连续。",
+      "tags": [
+        "连续"
+      ]
+    },
+    {
+      "id": "f09",
+      "chapterId": "ch05",
+      "front": "可导与连续的关系",
+      "back": "可导必连续，连续不必可导（|x| 在 0 点）。",
+      "tags": [
+        "导数"
+      ]
+    },
+    {
+      "id": "f10",
+      "chapterId": "ch05",
+      "front": "一阶微分形式不变性",
+      "back": "无论 x 是自变量还是中间变量，dy=f'(u)du 都成立。",
+      "tags": [
+        "微分"
+      ]
+    },
+    {
+      "id": "f11",
+      "chapterId": "ch06",
+      "front": "拉格朗日中值定理",
+      "back": "f 连续可导，则存在 ξ 使 f(b)-f(a)=f'(ξ)(b-a)。",
+      "tags": [
+        "中值定理"
+      ]
+    },
+    {
+      "id": "f12",
+      "chapterId": "ch06",
+      "front": "洛必达失效的例子",
+      "back": "lim(x→∞)(x+sin x)/x，导数比震荡，但原极限为 1。",
+      "tags": [
+        "极限"
+      ]
+    },
+    {
+      "id": "f13",
+      "chapterId": "ch07",
+      "front": "六条完备性定理",
+      "back": "确界、单调有界、区间套、聚点、致密性、柯西。",
+      "tags": [
+        "完备性"
+      ]
+    },
+    {
+      "id": "f14",
+      "chapterId": "ch07",
+      "front": "上极限与下极限相等意味着什么",
+      "back": "数列收敛，且共同值就是极限。",
+      "tags": [
+        "极限"
+      ]
+    },
+    {
+      "id": "f15",
+      "chapterId": "ch08",
+      "front": "分部积分选 u 的口诀",
+      "back": "反对幂三指：反三角、对数、幂、三角、指数。",
+      "tags": [
+        "积分"
+      ]
+    },
+    {
+      "id": "f16",
+      "chapterId": "ch08",
+      "front": "三角代换三种对应",
+      "back": "√(a²-x²) 用 a sin t；√(a²+x²) 用 a tan t；√(x²-a²) 用 a sec t。",
+      "tags": [
+        "积分"
+      ]
+    },
+    {
+      "id": "f17",
+      "chapterId": "ch09",
+      "front": "可积的充要条件",
+      "back": "分割细度趋于 0 时，上和与下和之差趋于 0。",
+      "tags": [
+        "定积分"
+      ]
+    },
+    {
+      "id": "f18",
+      "chapterId": "ch09",
+      "front": "牛顿-莱布尼茨公式",
+      "back": "∫ₐᵇf=F(b)-F(a)，要求 f 连续、F 是原函数。",
+      "tags": [
+        "定积分"
+      ]
+    },
+    {
+      "id": "f19",
+      "chapterId": "ch10",
+      "front": "旋转体体积公式",
+      "back": "绕 x 轴 V=π∫f²dx；绕 y 轴用柱壳 V=2π∫x·f dx。",
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "f20",
+      "chapterId": "ch10",
+      "front": "弧长公式",
+      "back": "s=∫√(1+y'²)dx，参数与极坐标只需换 ds。",
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "f21",
+      "chapterId": "ch11",
+      "front": "p 积分的敛散",
+      "back": "∫₁^∞x^{-p}：p>1 收敛；∫₀¹x^{-p}：p<1 收敛。",
+      "tags": [
+        "反常积分"
+      ]
+    },
+    {
+      "id": "f22",
+      "chapterId": "ch11",
+      "front": "条件收敛的例子",
+      "back": "∫₁^∞ sin x/x dx：本身收敛，绝对值发散。",
+      "tags": [
+        "反常积分"
+      ]
+    }
+  ],
+  "companion": "数学分析上册学习伴侣.html"
+}
